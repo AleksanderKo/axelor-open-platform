@@ -43,7 +43,6 @@ Function<String, String> T = new Function<String, String>() {
   }
 };
 
-String appLogo = info.getLogo();
 
 String errorMsg = T.apply(request.getParameter(FormClient.ERROR_PARAMETER));
 
@@ -96,10 +95,7 @@ Set<String> centralClients = AuthPac4jModule.getCentralClients();
     <div class="container-fluid">
       <div class="panel login-panel">
         <div class="panel-header panel-default">
-          <!-- <img src="img/logo.png" width="192px"> -->
-          <a class="brand-logo" href="<%= appHome %>">
-            <img src="<%= appLogo %>">
-          </a>
+           <img src="img/logo.svg" width="192px">
         </div>
 
         <div id="error-msg" class="alert alert-block alert-error text-center <%= errorMsg == null ? "hidden" : "" %>">

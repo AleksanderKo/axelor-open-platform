@@ -42,7 +42,6 @@ Function<String, String> T = new Function<String, String>() {
   }
 };
 
-String appLogo = info.getLogo();
 
 AuthService authService = AuthService.getInstance();
 
@@ -88,10 +87,7 @@ String callbackUrl = AuthPac4jModule.getCallbackUrl();
     <div class="container-fluid">
       <div class="panel login-panel">
         <div class="panel-header panel-default">
-          <!-- <img src="img/axelor.png" width="192px"> -->
-          <a class="brand-logo" href="<%= appHome %>">
-            <img src="<%= appLogo %>">
-          </a>
+          <img src="img/logo.svg" width="192px">
         </div>
 
         <div class="alert alert-block alert-error text-center">
