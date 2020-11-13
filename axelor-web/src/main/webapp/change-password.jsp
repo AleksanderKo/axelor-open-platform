@@ -42,6 +42,8 @@ Function<String, String> T = new Function<String, String>() {
   }
 };
 
+String appLogo = info.getLogo();
+
 AuthService authService = AuthService.getInstance();
 
 String newPasswordMustBeDifferent = T.apply("New password must be different.");
@@ -61,7 +63,7 @@ String newPassword = T.apply("New password");
 String confirmPassword = T.apply("Confirm password");
 
 int year = Calendar.getInstance().get(Calendar.YEAR);
-String copyright = String.format("&copy; 2005 - %s Axelor. All Rights Reserved.", year);
+String copyright = String.format("&copy; %s Grain . All Rights Reserved.", year);
 
 @SuppressWarnings("all")
 Map<String, String> tenants = (Map) session.getAttribute("tenantMap");
@@ -86,7 +88,10 @@ String callbackUrl = AuthPac4jModule.getCallbackUrl();
     <div class="container-fluid">
       <div class="panel login-panel">
         <div class="panel-header panel-default">
-          <img src="img/axelor.png" width="192px">
+          <!-- <img src="img/axelor.png" width="192px"> -->
+          <a class="brand-logo" href="<%= appHome %>">
+            <img src="<%= appLogo %>">
+          </a>
         </div>
 
         <div class="alert alert-block alert-error text-center">

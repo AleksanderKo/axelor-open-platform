@@ -43,6 +43,8 @@ Function<String, String> T = new Function<String, String>() {
   }
 };
 
+String appLogo = info.getLogo();
+
 String errorMsg = T.apply(request.getParameter(FormClient.ERROR_PARAMETER));
 
 String loginTitle = T.apply("Please sign in");
@@ -59,7 +61,7 @@ String warningAdblock2 = T.apply("Please disable the adblocker as it may slow do
 String loginWith = T.apply("Log in with %s");
 
 int year = Calendar.getInstance().get(Calendar.YEAR);
-String copyright = String.format("&copy; 2005 - %s Axelor. All Rights Reserved.", year);
+String copyright = String.format("&copy; %s Grain. All Rights Reserved.", year);
 
 String loginHeader = "/login-header.jsp";
 if (pageContext.getServletContext().getResource(loginHeader) == null) {
@@ -94,7 +96,10 @@ Set<String> centralClients = AuthPac4jModule.getCentralClients();
     <div class="container-fluid">
       <div class="panel login-panel">
         <div class="panel-header panel-default">
-          <img src="img/axelor.png" width="192px">
+          <!-- <img src="img/logo.png" width="192px"> -->
+          <a class="brand-logo" href="<%= appHome %>">
+            <img src="<%= appLogo %>">
+          </a>
         </div>
 
         <div id="error-msg" class="alert alert-block alert-error text-center <%= errorMsg == null ? "hidden" : "" %>">
