@@ -27,3 +27,6 @@ Please see the [CONTRIBUTING](CONTRIBUTING.md) documentation.
 * [Axelor][uri_axelor]
 * [Documentation][uri_docs]
 * [License][uri_license]
+
+./gradlew -x test build -- for build
+./gradlew publishToMavenLocal -- for publish local Maven
