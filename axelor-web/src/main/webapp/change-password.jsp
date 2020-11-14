@@ -87,7 +87,7 @@ String callbackUrl = AuthPac4jModule.getCallbackUrl();
     <div class="container-fluid">
       <div class="panel login-panel">
         <div class="panel-header panel-default">
-          <img src="img/logo.svg" width="192px">
+          <img src="img/logo.png" width="192px">
         </div>
 
         <div class="alert alert-block alert-error text-center">
