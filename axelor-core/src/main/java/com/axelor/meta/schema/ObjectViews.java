@@ -45,6 +45,7 @@ import com.axelor.meta.schema.views.MenuItem;
 import com.axelor.meta.schema.views.Search;
 import com.axelor.meta.schema.views.SearchFilters;
 import com.axelor.meta.schema.views.Selection;
+import com.axelor.meta.schema.views.TimeLineView;
 import com.axelor.meta.schema.views.TreeView;
 import java.util.List;
 import javax.xml.bind.annotation.XmlElement;
@@ -78,6 +79,7 @@ public class ObjectViews {
     @XmlElement(name = "search", type = Search.class),
     @XmlElement(name = "calendar", type = CalendarView.class),
     @XmlElement(name = "gantt", type = GanttView.class),
+    @XmlElement(name = "timeline", type = TimeLineView.class),
     @XmlElement(name = "cards", type = CardsView.class),
     @XmlElement(name = "kanban", type = KanbanView.class),
     @XmlElement(name = "custom", type = CustomView.class),

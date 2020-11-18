@@ -27,14 +27,14 @@
   <role name="role.super" title="Super">
     <permission name="perm.auth.all"/>
   </role>
-  <role name="role.moderator" title="Moderator">
+  <role name="role.moderator" title="Модератор">
     <permission name="perm.auth.create"/>
     <permission name="perm.auth.self"/>
   </role>
-  <role name="role.manager" title="Manager">
+  <role name="role.manager" title="Менеджер">
     <permission name="perm.auth.self"/>
   </role>
-  <role name="role.user" title="User">
+  <role name="role.user" title="Пользователь">
     <permission name="perm.auth.my"/>
   </role>
 

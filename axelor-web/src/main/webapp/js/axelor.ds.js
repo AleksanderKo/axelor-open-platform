@@ -510,6 +510,8 @@
       var items = result.fields;
       var fields = view.items || view.pages;
 
+      console.log(view);
+
       if (!fields) return items;
       if (view.items && !view._included) {
         view._included = true;
@@ -595,6 +597,10 @@
       }
 
       if (view.type === "gantt") {
+        items.push(view.taskUser);
+      }
+
+      if (view.type === "timeline") {
         items.push(view.taskUser);
       }
 

@@ -22,7 +22,7 @@
       <field name="code" placeholder="login name" onChange="action-condition-user-validCode" validIf="code.length >= 2" readonlyIf="id &amp;&amp; code == 'admin'"/>
       <field name="group" placeholder="user group"/>
       <field name="email" widget="Email"/>
-      <field name="language"/>
+      <!-- <field name="language"/> -->
       <field name="theme" widget="theme-select"/>
       <panel stacked="true">
         <field name="homeAction" hidden="true" x-bind="{{__actionSelect.name}}"/>

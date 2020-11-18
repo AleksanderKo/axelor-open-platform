@@ -7,6 +7,7 @@
     <mapping name="monospace" font-family="DejaVu Sans Mono" />
   </font-aliases>
   <font-paths>
+    <path path="../dejavu" />
     <path path="C:/windows/fonts" />
     <path path="/usr/share/fonts/truetype" />
     <path path="/usr/share/fonts/TTF" />

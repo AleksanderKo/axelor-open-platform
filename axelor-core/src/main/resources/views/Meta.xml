@@ -11,6 +11,7 @@
     <option value="dashboard">Dashboard</option>
     <option value="calendar">Calendar</option>
     <option value="gantt">Gantt</option>
+    <option value="timeline">TimeLine</option>
     <option value="cards">Cards</option>
     <option value="kanban">Kanban</option>
     <option value="custom">Custom</option>

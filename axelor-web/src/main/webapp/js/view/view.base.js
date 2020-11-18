@@ -737,6 +737,7 @@ ui.directive('uiViewSwitcher', function(){
         '<button class="btn" x-view-type="kanban"><i class="fa fa-columns"></i></button>'+
           '<button class="btn" x-view-type="calendar"><i class="fa fa-calendar"></i></button>'+
           '<button class="btn" x-view-type="gantt"><i class="fa fa-calendar"></i></button>'+
+          '<button class="btn" x-view-type="timeline"><i class="fa fa-calendar"></i></button>'+
           '<button class="btn" x-view-type="chart"><i class="fa fa-bar-chart-o"></i></button>'+
           '<button class="btn" x-view-type="form"	><i class="fa fa-file-text-o"></i></button>'+
         '</div>'+
@@ -760,6 +761,7 @@ ui.directive('uiViewSwitcherMenu', function(){
            "<li><a href='' x-view-type='kanban' x-translate>Kanban</a></li>" +
            "<li><a href='' x-view-type='calendar' x-translate>Calendar</a></li>" +
            "<li><a href='' x-view-type='gantt' x-translate>Gantt</a></li>" +
+           "<li><a href='' x-view-type='timeline' x-translate>timeline</a></li>" +
            "<li><a href='' x-view-type='chart' x-translate>Chart</a></li>" +
            "<li><a href='' x-view-type='form' x-translate>Form</a></li>" +
         "</ul>" +

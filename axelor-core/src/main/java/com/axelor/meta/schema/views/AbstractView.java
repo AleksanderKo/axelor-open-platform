@@ -52,6 +52,7 @@ import javax.xml.bind.annotation.XmlType;
   @Type(ChartView.class),
   @Type(CalendarView.class),
   @Type(GanttView.class),
+  @Type(TimeLineView.class),
   @Type(CardsView.class),
   @Type(KanbanView.class),
   @Type(CustomView.class),

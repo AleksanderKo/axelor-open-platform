@@ -75,7 +75,16 @@ public class I18nExtractor {
 
   private static final Set<String> VIEW_TYPES =
       Sets.newHashSet(
-          "form", "grid", "tree", "calendar", "kanban", "cards", "gantt", "chart", "custom");
+          "form",
+          "grid",
+          "tree",
+          "calendar",
+          "kanban",
+          "cards",
+          "gantt",
+          "timeline",
+          "chart",
+          "custom");
 
   private static final Set<String> FIELD_NODES =
       Sets.newHashSet(
